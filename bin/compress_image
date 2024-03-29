@@ -1,0 +1,3 @@
+convert $1 -resize 800x1131 tmp.jpg
+convert tmp.jpg -quality 85 "$1-compressed.webp"
+rm tmp.jpg
