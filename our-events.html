@@ -1,22 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Playground Bureau Festival - Coming Soon!</title>
+    <title>The Playground Bureau</title>
     <style>
-      @font-face {
-        font-family: "CustomComicSans";
-        src: url("assets/fonts/COMICSANS.TTF");
-      }
-
-      @font-face {
-        font-family: "CustomComicSansBold";
-        src: url("assets/fonts/COMICSANSBOLD.TTF");
-      }
-
       body {
         background-color: #82D5F5;
         text-align: center;
-        font-family: "CustomComicSans";
+        font-family: 'Times New Roman', serif;
       }
 
       marquee {
@@ -46,6 +36,23 @@
         margin: 0;
       }
 
+      .event-image {
+        height: 300px;
+        margin: 20px;
+        margin-left: 2px;
+        margin-right: 2px;
+      }
+
+      .event-description {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
       /* colors:  */
       .dark-blue { color: #125A7A }
       .blue { color: #1C9EBD }
@@ -55,31 +62,52 @@
     </style>
   </head>
   <body>
-    <h1 class="dark-blue">Welcome to <span class="dark-orange">Playground Bureau</span>'s</h1>
+    <h1 class="dark-blue">Welcome to <span class="dark-orange">The Playground Bureau</span>'s</h1>
     <h1 class="dark-blue">World Wide Webpage!</h1>
-    <div align='center'>
-        <span style="font-size: 16px; vertical-align: middle; margin-right: 0px;">You are visitor #</span>
-        <img src='assets/images/visitor-counter.png' border='0' style="vertical-align: middle; margin-left: 0px; height: 30px;">
-    </div>
-    <marquee class="blue">
-        Mark your calendar! Our inaugural festival coming up on Sep 27-29 🎉
-    </marquee>
-    <img src="assets/images/logo.gif" alt="Spinning Logo" style="margin: 0" />
-    <p class="no-margin dark-blue">Check out our cool links:</p>
+    <hr/>
+    <h2 class="dark-blue">🎉 Our Events 🎉</h2>
+
+    <!-- Strictly Good Vibes Vol 3 -->
     <div>
-      <a href="#" style="font-size: 20px">
-        <img src="fake.gif" alt="About Us"/>
-      </a>
-      <a href="#" style="font-size: 20px">
-        <img src="fake.gif" alt="Our Events"/>
-      </a>
-      <a href="https://www.instagram.com/playground.bureau" style="font-size: 20px">
-        <img src="fake.gif" alt="Instagram"/>
+      <h2 class="dark-blue">Strictly Good Vibes: Vol 3</h2>
+      <div class="event-description">
+        <p class="dark-blue">
+          Coming up on May 18th, 2024!
+          Message us on Instagram or get in touch with the organizers to get on the list. All proceeds go towards our Festival coming up on September 27-29, 2024.
+          <br/>
+          <br/>
+          DJs featured:
+          <a href="https://soundcloud.com/suru">SURUU</a>,
+          <a href="https://soundcloud.com/menine_j">Menine</a>,
+          <a href="https://soundcloud.com/dj-simply-kat">Simply Kat</a>,
+          <a href="https://soundcloud.com/skudracula">SKUDRA</a>, and more.
+        </p>
+      </div>
+    </div>
+
+    <br>
+
+    <!-- Strictly Good Vibes Vol 2 -->
+    <div>
+      <h2 class="dark-blue">Strictly Good Vibes: Vol 2</h2>
+      <div class="event-description">
+        <p class="dark-blue">
+          This debauchery happened on February something 2023.
+        </p>
+      </div>
+      <div>
+        <img class="event-image" src="assets/images/our-events/strictly-good-vibes-vol-2/sgv2-poster.jpg" alt="SVG2 Image 3">
+        <img class="event-image" src="assets/images/our-events/strictly-good-vibes-vol-2/sgv2-2.gif" alt="SVG2 Image 2">
+        <img class="event-image" src="assets/images/our-events/strictly-good-vibes-vol-2/sgv2-1.gif" alt="SVG2 Image 1">
+      </div>
+    </div>
+    <hr/>
+    <div>
+      <a href="index.html" style="font-size: 20px">
+        <img style="height: 20px; margin: 0" src="assets/images/broken-image.png" alt="Home"/>
+        Back to Home
       </a>
     </div>
-    <p class="construction">🚧 Permanently Under Construction 🚧</p>
-    <p class="dark-blue"><em>Best viewed in Netscape Navigator 4.0 or higher</em></p>
-    <marquee direction="right" class="dark-blue">🎉 Stay tuned 🎉</marquee>
     <p class="small-text dark-blue">Website created using cutting-edge technology. Playground Bureau, 2024</p>
   </body>
 </html>
