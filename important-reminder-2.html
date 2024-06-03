@@ -88,18 +88,18 @@
           <div style="text-align: center">***</div>
           <br>
           <div class="consent-to-rules">
-              <form>
-                  <input type="checkbox" id="agree" name="subscribe">
-                  <label for="agree">
-                      These guidelines are clear, and I appreciate that they are in effect for a good and positive reason. I commit to upholding these essentials, and understand that if I don’t, then I will be asked to leave the festival.
-                  </label>
-              </form>
+            <form>
+              <input type="checkbox" id="agree" name="subscribe">
+              <label for="agree">
+                These guidelines are clear, and I appreciate that they are in effect for a good and positive reason. I commit to upholding these essentials, and understand that if I don’t, then I will be asked to leave the festival.
+              </label>
+            </form>
           </div>
           <br>
           <div style="text-align: center">
-              <a id="ticketLink" href="https://www.tickettailor.com/events/playgroundbureau/1229516" style="font-size: 30px; font-weight: bold" onclick="return checkConsent();">
-                  >>>>>> Get Tickets <<<<<<
-              </a>
+            <a id="ticketLink" href="https://www.tickettailor.com/events/playgroundbureau/1229516" style="font-size: 30px; font-weight: bold" onclick="return checkConsent();">
+              >>>>>> Get Tickets <<<<<<
+            </a>
           </div>
           <br>
         </div>
@@ -110,23 +110,23 @@
       document.getElementById('ticketLink').style.opacity = '0.5'; // Make the link look disabled
 
       document.getElementById('agree').addEventListener('change', function() {
-          const link = document.getElementById('ticketLink');
-          if (this.checked) {
-              link.style.pointerEvents = 'auto'; // Enable the link
-              link.style.opacity = '1'; // Make the link fully visible
-          } else {
-              link.style.pointerEvents = 'none'; // Disable the link
-              link.style.opacity = '0.5'; // Make the link look disabled
-          }
+        const link = document.getElementById('ticketLink');
+        if (this.checked) {
+          link.style.pointerEvents = 'auto'; // Enable the link
+          link.style.opacity = '1'; // Make the link fully visible
+        } else {
+          link.style.pointerEvents = 'none'; // Disable the link
+          link.style.opacity = '0.5'; // Make the link look disabled
+        }
       });
 
       function checkConsent() {
-          const checkbox = document.getElementById('agree');
-          if (!checkbox.checked) {
-              alert('Please agree to the festival guidelines to proceed.');
-              return false;
-          }
-          return true;
+        const checkbox = document.getElementById('agree');
+        if (!checkbox.checked) {
+          alert('Please agree to the festival guidelines to proceed.');
+          return false;
+        }
+        return true;
       }
     </script>
   </body>
