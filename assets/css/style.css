@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "CustomComicSans";
+  src: url("assets/fonts/COMICSANS.TTF");
+}
+
+@font-face {
+  font-family: "CustomComicSansBold";
+  src: url("assets/fonts/COMICSANSBOLD.TTF");
+}
+
+strong {
+  font-family: "CustomComicSansBold";
+}
+
+body {
+  background-color: #82D5F5;
+  text-align: center;
+  font-family: 'CustomComicSans', 'Comic Sans MS' sans-serif;
+}
+
+marquee {
+  font-size: 24px;
+}
+
+img {
+  margin: 20px;
+}
+
+h1 {
+  font-size: 20px;
+  font-family: 'CustomComicSans', 'Comic Sans MS' sans-serif;
+  margin: 0;
+}
+
+.construction {
+  font-size: 30px;
+  color: #ff0000;
+}
+
+.small-text {
+  font-size: 12px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.principles-and-rules {
+  display: block;
+  text-align: left;
+  width: 800px;
+  font-size: 20px;
+}
+
+.festival-info-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 800px
+}
+
+.consent-to-rules {
+  font-size: 20px;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+/* colors:  */
+.dark-blue { color: #125A7A }
+.blue { color: #1C9EBD }
+.light-blue { color: #82D5F5 }
+.dark-orange { color: #F6851F }
+.orange { color: #FCB711 }
