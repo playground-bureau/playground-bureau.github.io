@@ -1,0 +1,37 @@
+body {
+  background-color: var(--color-5);
+  text-align: center;
+  font-family: 'Times New Roman', serif;
+}
+
+marquee {
+  font-size: 24px;
+}
+
+img {
+  margin: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: 'Times New Roman', serif;
+  margin: 0;
+}
+
+.construction {
+  font-size: 30px;
+  color: #ff0000;
+}
+
+.small-text {
+  font-size: 12px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+}
+
