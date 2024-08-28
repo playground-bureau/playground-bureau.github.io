@@ -72,6 +72,12 @@ h1 {
   justify-content: center;
 }
 
+.redacted-text {
+  background-color: #D0CBF0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+}
+
 /* nav links */
 
 .nav-links {
