@@ -13,7 +13,6 @@ strong {
 }
 
 body {
-  background-color: #82d5f5;
   text-align: center;
   font-family: "CustomComicSans", "Comic Sans MS", sans-serif;
 }
@@ -73,7 +72,7 @@ h1 {
   justify-content: center;
 }
 
-/* nav bar */
+/* nav links */
 
 .nav-links {
   display: flex;
@@ -87,7 +86,6 @@ h1 {
   text-decoration: none;
   display: flex;
   align-items: center;
-  text-decoration: underline;
 }
 
 .nav-icon {
@@ -101,7 +99,32 @@ h1 {
   color: var(--color-6);
 }
 
+/* links */
+
+.link {
+  text-decoration: none;
+  color: var(--color-3);
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: var(--color-5);
+}
+
+/* contact-info */
+.contact-info {
+  display: inline;
+  text-align: center;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.contact-info .link {
+  display: inline;
+}
+
 /* colors:  */
+
 :root {
   --color-1: #0016BE;
   --color-2: #FFBC00;

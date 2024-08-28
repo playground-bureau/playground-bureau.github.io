@@ -28,11 +28,11 @@
         margin: 0;
       }
     </style>
+    <script src="main-components.js"></script>
   </head>
   <body>
-    <h1 class="color-two">Welcome to <span class="color-three">the Playground Bureau</span>'s</h1>
-    <h1 class="color-two">World Wide Webpage!</h1>
-    <hr/>
+    <div id="header-component"></div>
+
     <div align='center'>
         <span class="color-four" style="font-size: 16px; vertical-align: middle; margin-right: 0px;">You are visitor #</span>
         <img src='assets/images/visitor-counter.png' border='0' style="vertical-align: middle; margin-left: 0px; height: 30px; margin-top:0">
@@ -58,10 +58,6 @@
         <img style="width: 15px; margin: 0" src="assets/images/broken-image.png" alt="Our Events"/>
         Our Events
       </a> -->
-      <!-- <a href="festival.html" style="font-size: 30px; margin-right: 25px">
-        <img style="width: 15px; margin: 0" src="assets/images/broken-image.png" alt="Festival"/>
-        Monkey Business Festival
-      </a> -->
       <a href="festival.html" class="nav-link color-five">
         <img class="nav-icon" src="assets/images/broken-image.png" alt="Festival"/>
         Monkey Business Festival
@@ -77,11 +73,10 @@
         Click Here for Festival Info and Tickets
       </a>
     </marquee>
-    <hr/>
-    <p class="color-four"><em>Best viewed in Internet Explorer 2.0 or higher.</em></p>
-    <p class="color-five"><em>Web page created using cutting-edge technology by Playground Bureau, 2024</em></p>
-    <br>
+
+    <div id="footer-component"></div>
     <p class="color-five" style="margin-top: 3000px">What are you doing down here?</p>
-    <script src="assets/js/color-shuffler.js"></script>
+
+    <script src="assets/js/components.js"></script>
   </body>
 </html>
