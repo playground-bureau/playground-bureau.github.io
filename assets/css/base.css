@@ -1,0 +1,75 @@
+/* colors:  */
+
+:root {
+  --color-1: #0016BE;
+  --color-2: #FFBC00;
+  --color-3: #FF00AC;
+  --color-4: #52CCFF;
+  --color-5: #FFA1E3;
+  --color-6: #00A448;
+}
+
+.blue { color: var(--color-1); }
+.yellow { color: var(--color-2); }
+.magenta { color: var(--color-3); }
+.cyan { color: var(--color-4); }
+.pink { color: var(--color-5); }
+.green { color: var(--color-6); }
+
+@font-face {
+  font-family: "CustomComicSans";
+  src: url("../fonts/COMICSANS.TTF");
+}
+
+@font-face {
+  font-family: "CustomComicSansBold";
+  src: url("../fonts/COMICSANSBOLD.TTF");
+}
+
+strong {
+  font-family: "CustomComicSansBold";
+}
+
+body {
+  text-align: center;
+  font-family: "CustomComicSans", "Comic Sans MS", sans-serif;
+}
+
+img {
+  margin: 20px;
+}
+
+h1 {
+  font-size: 20px;
+  font-family: "CustomComicSans", "Comic Sans MS", sans-serif;
+  margin: 0;
+}
+
+.small-text {
+  font-size: 12px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.redacted-text {
+  background-color: #D0CBF0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+}
+
+#footer-component {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  #footer-component {
+    font-size: 10px;
+  }
+}

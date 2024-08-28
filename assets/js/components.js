@@ -1,13 +1,13 @@
 const components = {
   header: `
-    <h1 class="color-two">Welcome to <span class="color-three">the Playground Bureau</span>'s</h1>
-    <h1 class="color-two">World Wide Webpage!</h1>
+    <h1 class="blue">Welcome to <span class="green">the Playground Bureau</span>'s</h1>
+    <h1 class="blue">World Wide Webpage!</h1>
     <hr/>
   `,
   footer: `
     <hr/>
-    <p class="color-four"><em>Best viewed in Internet Explorer 2.0 or higher.</em></p>
-    <p class="color-five"><em>Web page created using cutting-edge technology by Playground Bureau, 2024</em></p>
+    <p class="cyan"><em>Best viewed in Internet Explorer 2.0 or higher.</em></p>
+    <p class="pink"><em>Web page created using cutting-edge technology by Playground Bureau, 2024</em></p>
     <br>
   `
 }
