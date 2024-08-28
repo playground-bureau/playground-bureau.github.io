@@ -75,8 +75,8 @@ img {
   flex-wrap: wrap;
 }
 
-.logo {
-  width: 20%;
+.logo-gif {
+  width: 30%;
   margin: 10px 0;
 }
 
@@ -89,7 +89,16 @@ img {
   }
 }
 
-/* nav bar */
+/* nav links */
+
+.learn-more {
+  margin-top: 10px;
+}
+
+.learn-more p {
+  font-size: 18px;
+  margin: 0;
+}
 
 .menu-container {
   display: flex;
