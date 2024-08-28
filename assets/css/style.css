@@ -13,7 +13,6 @@ strong {
 }
 
 body {
-  background-color: #82d5f5;
   text-align: center;
   font-family: "CustomComicSans", "Comic Sans MS", sans-serif;
 }
@@ -30,11 +29,6 @@ h1 {
   font-size: 20px;
   font-family: "CustomComicSans", "Comic Sans MS", sans-serif;
   margin: 0;
-}
-
-.construction {
-  font-size: 30px;
-  color: #ff0000;
 }
 
 .small-text {
@@ -78,23 +72,86 @@ h1 {
   justify-content: center;
 }
 
+.redacted-text {
+  background-color: #D0CBF0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+}
+
+.nav-icon {
+  width: 15px;
+  margin-right: 5px;
+}
+
+/* links */
+
+.link {
+  text-decoration: none;
+  color: var(--color-3);
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: var(--color-5);
+}
+
+.ticket-link {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--color-1);
+  transition: color 0.5s;
+}
+
+.ticket-link:hover {
+  text-decoration: underline;
+  color: var(--color-6);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  font-size: 30px;
+  margin-right: 25px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: var(--color-6);
+}
+
+/* contact-info */
+.contact-info {
+  display: inline;
+  text-align: center;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.contact-info .link {
+  display: inline;
+}
+
 /* colors:  */
-.dark-blue {
-  color: #125a7a;
+
+:root {
+  --color-1: #0016BE;
+  --color-2: #FFBC00;
+  --color-3: #FF00AC;
+  --color-4: #52CCFF;
+  --color-5: #FFA1E3;
+  --color-6: #00A448;
 }
 
-.blue {
-  color: #1c9ebd;
-}
-
-.light-blue {
-  color: #82d5f5;
-}
-
-.dark-orange {
-  color: #f6851f;
-}
-
-.orange {
-  color: #fcb711;
-}
+.color-one { color: var(--color-1); }
+.color-two { color: var(--color-2); }
+.color-three { color: var(--color-3); }
+.color-four { color: var(--color-4); }
+.color-five { color: var(--color-5); }
+.color-six { color: var(--color-6); }
