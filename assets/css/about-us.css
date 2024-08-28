@@ -1,5 +1,5 @@
 body {
-  background-color: var(--color-5);
+  background-color: var(--color-6);
   text-align: center;
   font-family: 'Times New Roman', serif;
 }
@@ -18,20 +18,27 @@ h1 {
   margin: 0;
 }
 
-.construction {
-  font-size: 30px;
-  color: #ff0000;
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.small-text {
-  font-size: 12px;
+.about-us-title {
+  max-width: 360px;
+  text-align: left;
 }
 
-.no-margin {
-  margin: 0;
-}
-
-p {
+.about-us-section {
+  max-width: 360px;
+  text-align: left;
+  display: block;
+  padding: 10px;
   font-size: 20px;
+}
+
+.about-us-block {
+  margin-bottom: 20px;
 }
 

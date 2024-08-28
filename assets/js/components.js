@@ -6,8 +6,8 @@ const components = {
   `,
   footer: `
     <hr/>
-    <p class="cyan"><em>Best viewed in Internet Explorer 2.0 or higher.</em></p>
-    <p class="pink"><em>Web page created using cutting-edge technology by Playground Bureau, 2024</em></p>
+    <p class="green"><em>Best viewed in Internet Explorer 2.0 or higher.</em></p>
+    <p class="green"><em>Web page created using cutting-edge technology by Playground Bureau, 2024</em></p>
     <br>
   `
 }

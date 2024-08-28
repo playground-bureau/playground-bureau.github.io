@@ -1,4 +1,20 @@
+@font-face {
+  font-family: "CustomComicSans";
+  src: url("../fonts/COMICSANS.TTF");
+}
+
+@font-face {
+  font-family: "CustomComicSansBold";
+  src: url("../fonts/COMICSANSBOLD.TTF");
+}
+
+strong {
+  font-family: "CustomComicSansBold";
+}
+
 body {
+  text-align: center;
+  font-family: "CustomComicSans", "Comic Sans MS", sans-serif;
   background-color: var(--color-2);
 }
 
