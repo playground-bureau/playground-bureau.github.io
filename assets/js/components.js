@@ -3,7 +3,6 @@ const components = {
     <h1 class="color-two">Welcome to <span class="color-three">the Playground Bureau</span>'s</h1>
     <h1 class="color-two">World Wide Webpage!</h1>
     <hr/>
-
   `,
   footer: `
     <hr/>
