@@ -78,7 +78,34 @@ h1 {
   font-size: 0.9em;
 }
 
-/* nav links */
+.nav-icon {
+  width: 15px;
+  margin-right: 5px;
+}
+
+/* links */
+
+.link {
+  text-decoration: none;
+  color: var(--color-3);
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: var(--color-5);
+}
+
+.ticket-link {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--color-1);
+  transition: color 0.5s;
+}
+
+.ticket-link:hover {
+  text-decoration: underline;
+  color: var(--color-6);
+}
 
 .nav-links {
   display: flex;
@@ -94,27 +121,9 @@ h1 {
   align-items: center;
 }
 
-.nav-icon {
-  width: 15px;
-  margin-right: 5px;
-}
-
-/* You can add hover effects if desired */
 .nav-link:hover {
   text-decoration: underline;
   color: var(--color-6);
-}
-
-/* links */
-
-.link {
-  text-decoration: none;
-  color: var(--color-3);
-}
-
-.link:hover {
-  text-decoration: underline;
-  color: var(--color-5);
 }
 
 /* contact-info */
