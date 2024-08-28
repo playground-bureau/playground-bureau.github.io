@@ -72,12 +72,19 @@ img {
 .logo-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  max-height: 436px;
+  overflow: hidden;
 }
 
 .logo-gif {
   width: 30%;
-  margin: 10px 0;
+  max-width: 300px; /* Adjust this value as needed */
+  height: auto;
+  max-height: 300px; /* Adjust this value as needed */
+  object-fit: contain;
+  margin: 10px;
 }
 
 @media (max-width: 768px) {
@@ -86,6 +93,10 @@ img {
   }
   .always-show {
     width: 100%;
+    max-width: 300px; /* Adjust this value as needed */
+  }
+  .logo-container {
+    max-height: none; /* Remove max-height constraint on mobile */
   }
 }
 
