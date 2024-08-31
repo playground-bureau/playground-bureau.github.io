@@ -49,6 +49,18 @@ body {
   padding: 0 10px;
 }
 
+.festival-info-image {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .festival-info-image {
+    width: 100%;
+  }
+}
+
 .link {
   text-decoration: none;
   color: var(--color-3);
@@ -64,7 +76,6 @@ body {
   font-size: 30px;
   font-weight: bold;
   color: var(--color-1);
-  transition: color 0.5s;
   text-align: center;
 }
 
@@ -72,6 +83,12 @@ body {
   .ticket-link {
     font-size: 20px;
   }
+}
+
+.ticket-link a {
+  display: inline-block;
+  transition: color 1s, transform 1s;
+  transform-origin: center;
 }
 
 .ticket-link:hover {

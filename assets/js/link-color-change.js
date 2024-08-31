@@ -1,30 +1,34 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const ticketLinks = document.querySelectorAll('.ticket-link')
-  const colors = [
-    '--color-1',
-    '--color-2',
-    '--color-3',
-    '--color-4',
-    '--color-5',
-    '--color-6'
-  ]
+  const ticketLinks = document.querySelectorAll('.ticket-link a')
+  const colors = ['#0016BE', '#FF00AC', '#52CCFF', '#FFA1E3', '#00A448']
 
   ticketLinks.forEach(ticketLink => {
     let colorIndex = 0
-    let intervalId
+    let isAnimating = false
 
-    function changeColor () {
+    function nextColor () {
       colorIndex = (colorIndex + 1) % colors.length
-      ticketLink.style.color = `var(${colors[colorIndex]})`
+      return colors[colorIndex]
+    }
+
+    function animateColors () {
+      if (!isAnimating) return
+
+      ticketLink.style.color = nextColor()
+
+      setTimeout(animateColors, 1000)
     }
 
     ticketLink.addEventListener('mouseenter', function () {
-      intervalId = setInterval(changeColor, 500) // Change color every 500ms (half second)
+      isAnimating = true
+      animateColors()
+      ticketLink.style.transform = 'scale(1.05)'
     })
 
     ticketLink.addEventListener('mouseleave', function () {
-      clearInterval(intervalId)
-      ticketLink.style.color = '' // Reset to initial color
+      isAnimating = false
+      ticketLink.style.color = ''
+      ticketLink.style.transform = 'scale(1)'
     })
   })
 })
