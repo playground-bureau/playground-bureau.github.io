@@ -45,8 +45,9 @@ h1 {
   font-size: 0.9em;
 }
 
-#footer-component {
+.footer {
   font-size: 16px;
+  margin: 0;
 }
 
 @media (max-width: 768px) {

@@ -25,9 +25,24 @@ h1 {
   justify-content: center;
 }
 
+.about-us-image {
+  margin: 0;
+  padding: 10px;
+}
+
 .about-us-title {
-  max-width: 360px;
+  width: 100%;
   text-align: left;
+}
+
+.about-us-title h2 {
+  padding: 10px;
+  margin: 20px 0 0 0;
+}
+
+.about-us-bottom {
+  width: 100%;
+  text-align: right;
 }
 
 .about-us-section {
