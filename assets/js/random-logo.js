@@ -11,8 +11,31 @@ document.addEventListener('DOMContentLoaded', function () {
   // Select all logo GIF images
   const logoGifs = document.querySelectorAll('.logo-gif')
 
-  // Update the src attribute for all logo GIF images
+  // Update the src attribute for all logo GIF images and handle loading
   logoGifs.forEach(gif => {
-    gif.src = gifFilename
+    // Create a new Image object to preload the GIF
+    const img = new Image()
+    img.src = gifFilename
+
+    img.onload = function () {
+      // Once the image is loaded, update the src and add the 'loaded' class
+      gif.src = gifFilename
+      gif.classList.add('loaded')
+
+      // Hide the placeholder
+      const placeholder = gif.previousElementSibling
+      if (placeholder && placeholder.classList.contains('logo-placeholder')) {
+        placeholder.style.display = 'none'
+      }
+    }
+
+    img.onerror = function () {
+      console.error('Failed to load GIF:', gifFilename)
+      // Optionally, you can show an error message in the placeholder
+      const placeholder = gif.previousElementSibling
+      if (placeholder && placeholder.classList.contains('logo-placeholder')) {
+        placeholder.textContent = 'Failed to load image'
+      }
+    }
   })
 })

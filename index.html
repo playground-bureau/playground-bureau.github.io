@@ -16,44 +16,54 @@
 
   </head>
   <body>
-    <h1 class="blue">Welcome to <span class="magenta">the Playground Bureau</span>'s</h1>
-    <h1 class="blue">World Wide Webpage!</h1>
-    <hr/>
-
-    <div class="main-contents">
-      <div class="visitor-counter">
-        <span class="green"><strong>You are visitor #</strong></span>
-        <img src='assets/images/visitor-counter.png' alt="Visitor count" class="counter-image">
+    <div class="page-container">
+      <div class="content-wrap">
+        <h1 class="blue">Welcome to <span class="magenta">the Playground Bureau</span>'s</h1>
+        <h1 class="blue">World Wide Webpage!</h1>
+        <hr/>
+        <div class="visitor-counter">
+          <span class="green"><strong>You are visitor #</strong></span>
+          <img src='assets/images/visitor-counter.png' alt="Visitor count" class="counter-image">
+        </div>
+        <marquee direction="left" scrollamount="15">
+          <a href="festival.html" class="marquee-link magenta">
+            Click Here for Festival Info and Tickets
+          </a>
+        </marquee>
+        <div class="logo-container">
+          <div class="logo-wrapper">
+            <div class="logo-placeholder"></div>
+            <img src="" alt="Spinning Logo" class="logo-gif always-show" />
+          </div>
+          <div class="logo-wrapper hide-on-mobile">
+            <div class="logo-placeholder"></div>
+            <img src="" alt="Spinning Logo" class="logo-gif" />
+          </div>
+          <div class="logo-wrapper hide-on-mobile">
+            <div class="logo-placeholder"></div>
+            <img src="" alt="Spinning Logo" class="logo-gif" />
+          </div>
+        </div>
+        <div class="menu-container">
+          <a href="about-us.html" class="nav-link clickable">
+            <img class="nav-icon" src="assets/images/broken-image.png" alt="About Us"/>
+            About Us
+          </a>
+          <!-- <a href="our-events.html" class="nav-link clickable">
+            <img style="width: 15px; margin: 0" src="assets/images/broken-image.png" alt="Our Events"/>
+            Our Events
+          </a> -->
+          <a href="festival.html" class="nav-link clickable">
+            <img class="nav-icon" src="assets/images/broken-image.png" alt="Festival"/>
+            Monkey Business Festival
+          </a>
+          <a href="https://www.instagram.com/playground.bureau" class="nav-link clickable">
+            <img class="nav-icon" src="assets/images/broken-image.png" alt="Instagran"/>
+            Instagran
+          </a>
+        </div>
+        <p class="construction magenta">🚧 Under Construction since 1999 🚧</p>
       </div>
-      <marquee direction="left" scrollamount="15">
-        <a href="festival.html" class="marquee-link magenta">
-          Click Here for Festival Info and Tickets
-        </a>
-      </marquee>
-      <div class="logo-container">
-        <img src="assets/images/logos/logo-static.png" alt="Spinning Logo" class="logo-gif always-show" />
-        <img src="assets/images/logos/logo-static.png" alt="Spinning Logo" class="logo-gif hide-on-mobile" />
-        <img src="assets/images/logos/logo-static.png" alt="Spinning Logo" class="logo-gif hide-on-mobile" />
-      </div>
-      <div class="menu-container">
-        <a href="about-us.html" class="nav-link clickable">
-          <img class="nav-icon" src="assets/images/broken-image.png" alt="About Us"/>
-          About Us
-        </a>
-        <!-- <a href="our-events.html" class="nav-link clickable">
-          <img style="width: 15px; margin: 0" src="assets/images/broken-image.png" alt="Our Events"/>
-          Our Events
-        </a> -->
-        <a href="festival.html" class="nav-link clickable">
-          <img class="nav-icon" src="assets/images/broken-image.png" alt="Festival"/>
-          Monkey Business Festival
-        </a>
-        <a href="https://www.instagram.com/playground.bureau" class="nav-link clickable">
-          <img class="nav-icon" src="assets/images/broken-image.png" alt="Instagran"/>
-          Instagran
-        </a>
-      </div>
-      <p class="construction magenta">🚧 Under Construction since 1999 🚧</p>
     </div>
 
     <div class="footer-wrapper">
@@ -61,7 +71,6 @@
       <p class="footer-text green"><em>Best viewed in Internet Explorer 2.0 or higher.</em></p>
       <p class="footer-text green"><em>Web page created using cutting-edge technology by Playground Bureau, 2024</em></p>
     </div>
-    <div class="magenta" style="margin-top: 3000px; margin-bottom: 80px">What are you doing down here?</div>
 
     <script src="assets/js/random-logo.js"></script>
   </body>

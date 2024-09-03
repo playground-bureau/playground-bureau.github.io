@@ -60,7 +60,7 @@ img {
 @media (max-width: 768px) {
   .marquee-link {
     font-size: 20px;
-    margin-right: 5px;
+    margin-bottom: 0;
   }
 }
 
@@ -79,13 +79,43 @@ img {
   overflow: hidden;
 }
 
-.logo-gif {
+.logo-wrapper {
+  position: relative;
   width: 30%;
-  max-width: 300px; /* Adjust this value as needed */
-  height: auto;
-  max-height: 300px; /* Adjust this value as needed */
-  object-fit: contain;
+  max-width: 300px;
+  height: 300px;
   margin: 10px;
+}
+
+.logo-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-placeholder::after {
+  color: #888;
+}
+
+.logo-gif {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.logo-gif.loaded {
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
@@ -94,10 +124,14 @@ img {
   }
   .always-show {
     width: 100%;
-    max-width: 300px; /* Adjust this value as needed */
+    max-width: 300px;
   }
   .logo-container {
-    max-height: none; /* Remove max-height constraint on mobile */
+    max-height: none;
+  }
+  .logo-wrapper {
+    width: 100%;
+    max-width: 300px;
   }
 }
 
@@ -115,13 +149,14 @@ img {
 .menu-container {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
   flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
   .menu-container {
     flex-direction: column;
+    margin-top: 10px;
   }
 
   .menu-container a {
@@ -162,6 +197,7 @@ img {
 
 .construction {
   font-size: 20px;
+  margin: 20px 0 0 0;
 }
 
 @media (max-width: 768px) {

@@ -47,6 +47,12 @@ body {
   padding: 0 10px;
 }
 
+@media (max-width: 768px) {
+  .festival-info-section {
+    padding: 0 30px;
+  }
+}
+
 .festival-info-image {
   width: 100%;
   height: auto;
@@ -89,8 +95,21 @@ body {
   padding: 0 10px;
 }
 
+@media (max-width: 768px) {
+  .important-reminder {
+    padding: 0 30px;
+    font-size: 17px;
+  }
+}
+
 .consent-to-rules {
   font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .consent-to-rules {
+    font-size: 20px;
+  }
 }
 
 /* contact-info */
