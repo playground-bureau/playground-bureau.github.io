@@ -45,9 +45,11 @@ h1 {
   font-size: 0.9em;
 }
 
-.footer {
-  font-size: 16px;
-  margin: 0;
+.main-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
 }
 
 .nav-back {
@@ -60,6 +62,30 @@ h1 {
   text-align: right;
 }
 
+.footer-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-wrapper {
+    position: static; /* Remove fixed positioning on mobile */
+    margin-top: 20px; /* Add some space above the footer */
+  }
+
+  .about-us-container {
+    padding-bottom: 20px; /* Reduce padding on mobile */
+  }
+}
+
+.footer-text {
+  text-align: center;
+  margin: 5px 0;
+}
+
 .clickable {
   cursor: pointer;
   text-decoration: underline;
@@ -68,12 +94,7 @@ h1 {
 
 .clickable:hover {
   cursor: pointer;
-  text-decoration: none;
+  /* text-decoration: none; */
   color: var(--color-6);
 }
 
-@media (max-width: 768px) {
-  #footer-component {
-    font-size: 10px;
-  }
-}

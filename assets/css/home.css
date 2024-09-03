@@ -19,6 +19,7 @@ h1 {
 /* visitor counter */
 
 .visitor-counter {
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,19 +52,19 @@ img {
 
 .marquee-link {
   font-size: 25px;
+  margin: 10px;
   display: flex;
   align-items: center;
 }
 
 @media (max-width: 768px) {
   .marquee-link {
-    font-size: 16px;
+    font-size: 20px;
     margin-right: 5px;
   }
 }
 
 .marquee-link:hover {
-  text-decoration: none;
   color: var(--color-2);
 }
 
@@ -114,6 +115,7 @@ img {
 .menu-container {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
   flex-wrap: wrap;
 }
 
