@@ -38,6 +38,11 @@ body {
   }
 }
 
+.section-title {
+  font-family: "CustomComicSansBold";
+  font-size: 20px;
+}
+
 .festival-info-block {
   margin-bottom: 20px;
 }
@@ -110,6 +115,32 @@ body {
   .consent-to-rules {
     font-size: 17px;
   }
+}
+
+.program-list-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .program-list-container {
+    flex-direction: column;
+  }
+}
+
+.program-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "CustomComicSansBold";
+  font-size: 18px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.program-list a {
+  font-family: "CustomComicSans";
+  font-size: 16px;
 }
 
 /* contact-info */
