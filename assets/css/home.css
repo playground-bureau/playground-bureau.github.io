@@ -147,11 +147,6 @@ img {
   }
 }
 
-.nav-link:hover {
-  text-decoration: none;
-  color: var(--color-6);
-}
-
 .nav-icon {
   width: 15px;
   margin-right: 5px;

@@ -24,8 +24,6 @@ body {
   object-fit: cover;
 }
 
-/* links */
-
 .festival-info-container {
   display: flex;
   justify-content: center;
@@ -61,39 +59,20 @@ body {
   }
 }
 
-.link {
-  text-decoration: none;
-  color: var(--color-3);
-}
-
-.link:hover {
-  text-decoration: underline;
-  color: var(--color-5);
-}
-
 .ticket-link {
   margin: 30px 0;
-  font-size: 30px;
-  font-weight: bold;
-  color: var(--color-1);
   text-align: center;
 }
 
+.ticket-link a {
+  font-size: 30px;
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
-  .ticket-link {
+  .ticket-link a {
     font-size: 20px;
   }
-}
-
-.ticket-link a {
-  display: inline-block;
-  transition: color 1s, transform 1s;
-  transform-origin: center;
-}
-
-.ticket-link:hover {
-  text-decoration: underline;
-  color: var(--color-6);
 }
 
 .event-page-description {

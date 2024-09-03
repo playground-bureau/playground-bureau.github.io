@@ -50,6 +50,28 @@ h1 {
   margin: 0;
 }
 
+.nav-back {
+  font-size: 20px;
+  text-align: left;
+}
+
+.nav-forward {
+  font-size: 20px;
+  text-align: right;
+}
+
+.clickable {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--color-1);
+}
+
+.clickable:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-6);
+}
+
 @media (max-width: 768px) {
   #footer-component {
     font-size: 10px;
