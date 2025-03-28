@@ -126,6 +126,13 @@ h1 {
   color: var(--color-6);
 }
 
+.breakable-text {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+}
+
 input[type="checkbox"] {
   transform: scale(1.5);
   margin-right: 10px;
