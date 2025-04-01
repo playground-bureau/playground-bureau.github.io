@@ -7,6 +7,8 @@
   --color-4: #52CCFF;
   --color-5: #FFA1E3;
   --color-6: #00A448;
+  --color-7: #F9ECB6;
+  --color-8: #7EC86E;
 }
 
 .blue { color: var(--color-1); }
@@ -15,6 +17,8 @@
 .cyan { color: var(--color-4); }
 .pink { color: var(--color-5); }
 .green { color: var(--color-6); }
+.vanilla { color: var(--color-7); }
+.sage {color: var(--color-8)}
 
 html, body {
   height: 100%;
@@ -75,6 +79,7 @@ h1 {
 .nav-back {
   font-size: 20px;
   text-align: left;
+  width: 60px;
 }
 
 @media screen and (max-width: 768px) {

@@ -15,7 +15,7 @@ strong {
 body {
   text-align: center;
   font-family: "CustomComicSans", "Comic Sans MS", sans-serif;
-  background-color: var(--color-5);
+  background-color: var(--color-8);
 }
 
 .festival-banner img {
@@ -167,5 +167,5 @@ body {
 }
 
 .sold-out {
-  color: red;
+  color: darkred;
 }
