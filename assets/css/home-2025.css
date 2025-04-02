@@ -10,12 +10,12 @@ body {
   background-color: var(--color-4); /* Classic Windows gray background */
   margin: 0;
   padding: 0;
-  font-family: "CustomComicSans", "Comic Sans MS", sans-serif;
+  font-family: 'Times New Roman', serif;
 }
 
 h1 {
   font-size: 40px;
-  font-family: "CustomComicSans", "Comic Sans MS", sans-serif;
+  font-family: 'Times New Roman', serif;
   margin: 0;
 }
 
