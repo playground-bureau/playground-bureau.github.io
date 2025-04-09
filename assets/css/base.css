@@ -142,3 +142,79 @@ input[type="checkbox"] {
   transform: scale(1.5);
   margin-right: 10px;
 }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* ===== IMAGES ===== */
+
+.float-left {
+  float: left;
+  height: auto;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.float-right {
+  float: right;
+  height: auto;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.img-tiny {
+  width: 80px;
+}
+
+.img-small {
+  width: 150px;
+}
+
+.img-medium {
+  width: 200px;
+}
+
+.img-large {
+  width: 250px;
+}
+
+.img-xl {
+  width: 300px;
+}
+
+.flip-horizontal {
+  transform: scaleX(-1);
+}
+
+@media (max-width: 768px) {
+  .float-right {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .content-with-image img.float-right {
+    text-align: center;
+  }
+
+  .content-with-image img.float-right {
+    max-width: 300px;
+  }
+}
+
+.shape-circle {
+  float: left;
+  width: 180px; /* Adjust size as needed */
+  height: 180px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  border-radius: 50%; /* Makes the image visually circular */
+  shape-outside: circle(50%); /* Creates circular text wrapping */
+  object-fit: cover; /* Ensures the image fills the circle */
+}
