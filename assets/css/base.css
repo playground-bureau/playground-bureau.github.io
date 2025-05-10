@@ -119,6 +119,10 @@ h1 {
   margin: 5px 0;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .clickable {
   cursor: pointer;
   text-decoration: underline;
