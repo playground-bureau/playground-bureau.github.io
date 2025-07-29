@@ -55,6 +55,25 @@ img {
   margin-top: -2px; /* Adjust to connect with main container */
 }
 
+/* Language toggle for index page */
+.language-toggle-index {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  font-size: 14px;
+  text-align: right;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.language-toggle-index a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.language-toggle-index .current-lang {
+  font-weight: bold;
+  color: #333;
+}
+
 /* Main layout for side-by-side nav and logo */
 .main-layout {
   display: flex;
