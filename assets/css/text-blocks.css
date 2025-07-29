@@ -66,4 +66,31 @@ h1 {
 .navigation-button {
   width: 100%;
   text-align: left;
+  margin: 20px 0;
+}
+
+.navigation-button a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #d4d0c8;
+  border: 2px outset #ffffff;
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.navigation-button a:hover {
+  background-color: white;
+}
+
+.navigation-button a:active {
+  border: 2px inset #ffffff;
+}
+
+@media (max-width: 768px) {
+  .navigation-button a {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
 }
