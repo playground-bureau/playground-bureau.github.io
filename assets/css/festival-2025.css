@@ -222,3 +222,22 @@ body {
     justify-self: center;
   }
 }
+
+/* LANGUAGE TOGGLE */
+.language-toggle {
+  font-family: "CustomComicSans", "Comic Sans MS", cursive;
+  font-size: 14px;
+  text-align: right;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.language-toggle a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.language-toggle .current-lang {
+  font-weight: bold;
+  color: #333;
+}
