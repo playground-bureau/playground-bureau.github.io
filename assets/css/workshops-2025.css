@@ -1,0 +1,52 @@
+.page-title {
+  font-family: "CustomComicSansBold";
+  font-size: 25px;
+  text-align: center;
+  margin: 20px 0;
+  color: #000;
+}
+
+.workshop-item {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.workshop-item h3 {
+  font-family: "CustomComicSansBold";
+  font-size: 22px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.workshop-details {
+  font-family: "CustomComicSans";
+  font-size: 16px;
+}
+
+.workshop-details p {
+  margin: 8px 0;
+  color: #000;
+}
+
+.workshop-details strong {
+  font-family: "CustomComicSansBold";
+  color: #000;
+}
+
+.workshop-description {
+  margin-top: 15px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .workshop-item h3 {
+    font-size: 18px;
+  }
+  
+  .workshop-details {
+    font-size: 14px;
+  }
+}
