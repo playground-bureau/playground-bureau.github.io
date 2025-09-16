@@ -12,6 +12,12 @@ strong {
   font-family: "CustomComicSansBold";
 }
 
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
 body {
   text-align: center;
   font-family: "CustomComicSans", "Comic Sans MS", sans-serif;
