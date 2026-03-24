@@ -113,6 +113,7 @@ img {
     Layout Containers
     ================== */
 .page-container {
+  width: 100%;
   max-width: 860px;
   margin: 0 auto;
   background-color: white;
@@ -120,6 +121,7 @@ img {
   padding: 0;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .content-wrap {
