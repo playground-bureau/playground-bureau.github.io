@@ -319,9 +319,9 @@ a.gov-header-left,
     Government Alert Marquee
     ================== */
 .gov-alert {
-  background-color: var(--gov-green-dark);
-  border-top: 3px solid var(--gov-yellow);
-  border-bottom: 3px solid var(--gov-yellow);
+  background-color: #8b0000;
+  border-top: 2px solid #ff4444;
+  border-bottom: 2px solid #ff4444;
   margin: 25px 0 0;
   padding: 10px 0;
   overflow: hidden;
@@ -333,7 +333,8 @@ a.gov-header-left,
   animation: marquee 30s linear infinite;
   font-family: 'Georgia', serif;
   font-size: 13px;
-  color: var(--gov-yellow);
+  color: #ffffff;
+  font-weight: bold;
   letter-spacing: 0.3px;
   padding-left: 100%;
 }
