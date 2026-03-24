@@ -1,18 +1,19 @@
 body {
-  background-color: var(--color-4);
+  background-color: var(--gov-blue);
   text-align: center;
-  font-family: 'Times New Roman', serif;
+  font-family: 'Georgia', 'Times New Roman', serif;
 }
 
 h1 {
-  font-size: 40px;
-  font-family: 'Times New Roman', serif;
+  font-size: 22px;
+  font-family: 'Georgia', serif;
   margin: 0;
+  color: var(--gov-green-dark);
 }
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -37,12 +38,16 @@ h1 {
 .about-us-title h2 {
   padding: 10px;
   margin: 20px 0 0 0;
+  color: var(--gov-green-dark);
+  font-family: 'Georgia', serif;
+  border-bottom: 2px solid var(--gov-green-primary);
+  padding-bottom: 8px;
 }
 
 .about-us-bottom {
   margin-top: 20px;
   width: 100%;
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
 }
 
@@ -56,10 +61,10 @@ h1 {
   text-align: left;
   display: block;
   padding: 10px;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .about-us-block {
   margin-bottom: 20px;
 }
-

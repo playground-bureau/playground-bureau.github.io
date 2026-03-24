@@ -1,37 +1,38 @@
 body {
-  background-color: var(--color-4);
+  background-color: var(--gov-blue);
   text-align: center;
-  font-family: 'Times New Roman', serif;
+  font-family: 'Georgia', 'Times New Roman', serif;
 }
 
 /* Language toggle */
 .language-toggle {
-  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
-  font-size: 14px;
+  font-family: 'Georgia', serif;
+  font-size: 12px;
   text-align: right;
   margin-bottom: 10px;
   color: #666;
 }
 
 .language-toggle a {
-  color: #0066cc;
+  color: var(--gov-green-primary);
   text-decoration: underline;
 }
 
 .language-toggle .current-lang {
   font-weight: bold;
-  color: #333;
+  color: var(--gov-green-dark);
 }
 
 h1 {
-  font-size: 40px;
-  font-family: 'Times New Roman', serif;
+  font-size: 22px;
+  font-family: 'Georgia', serif;
   margin: 0;
+  color: var(--gov-green-dark);
 }
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -56,6 +57,10 @@ h1 {
 .text-block-title h2 {
   padding: 10px;
   margin: 20px 0 0 0;
+  color: var(--gov-green-dark);
+  font-family: 'Georgia', serif;
+  border-bottom: 2px solid var(--gov-green-primary);
+  padding-bottom: 8px;
 }
 
 .text-block-bottom {
@@ -75,7 +80,8 @@ h1 {
   text-align: left;
   display: block;
   padding: 10px;
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .text-block {
@@ -91,25 +97,29 @@ h1 {
 .navigation-button a {
   display: inline-block;
   padding: 8px 16px;
-  background-color: #d4d0c8;
-  border: 2px outset #ffffff;
+  background-color: var(--gov-green-primary);
+  border: none;
+  border-radius: 2px;
   text-decoration: none;
-  color: #000000;
-  font-size: 16px;
+  color: white;
+  font-size: 14px;
+  font-family: 'Georgia', serif;
   white-space: nowrap;
+  transition: background-color 0.15s;
 }
 
 .navigation-button a:hover {
-  background-color: white;
+  background-color: var(--gov-green-bright);
+  color: white;
 }
 
 .navigation-button a:active {
-  border: 2px inset #ffffff;
+  background-color: var(--gov-green-dark);
 }
 
 @media (max-width: 768px) {
   .navigation-button a {
-    font-size: 14px;
+    font-size: 13px;
     padding: 6px 12px;
   }
 }

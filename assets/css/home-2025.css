@@ -1,29 +1,33 @@
 /*
  * home-2025.css
- * 90s-inspired boxed layout for Playground Bureau with fun colors
+ * Government agency portal — colorful & playful
  */
 
 /* ==================
    Base Styles
    ================== */
 body {
-  background-color: var(--color-4); /* Classic Windows gray background */
+  background-color: var(--gov-blue);
   margin: 0;
   padding: 0;
-  font-family: 'Times New Roman', serif;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 16px;
+  color: #1a1a1a;
 }
 
 h1 {
-  font-size: 40px;
-  font-family: 'Times New Roman', serif;
+  font-size: 22px;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-weight: bold;
   margin: 0;
+  color: var(--gov-green-dark);
 }
 
 hr {
-  height: 2px;
-  background-color: #000;
+  height: 3px;
+  background: linear-gradient(to right, var(--gov-green-dark), var(--gov-green-bright), var(--gov-yellow));
   border: none;
-  margin: 10px 0;
+  margin: 0;
 }
 
 img {
@@ -31,160 +35,165 @@ img {
 }
 
 /* ==================
-    Layout Containers
-    ================== */
-.page-container {
-  max-width: 800px;
-  margin: 20px auto;
-  background-color: var(--color-2);
-  border: 2px solid #000000;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-  padding: 20px;
+   Government Header Banner
+   ================== */
+.gov-header {
+  background-color: var(--gov-green-dark);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.content-wrap {
-  text-align: center;
+.gov-header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-.footer-wrapper {
-  max-width: 800px;
-  margin: 0 auto 20px;
-  background-color: white;
-  border: 2px solid #000000;
-  padding: 10px 20px 20px;
-  margin-top: -2px; /* Adjust to connect with main container */
+.gov-header-seal {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin: 0;
+  border-radius: 50%;
+  background: var(--gov-yellow);
+  padding: 3px;
 }
 
-/* Language toggle for index page */
-.language-toggle-index {
-  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
-  font-size: 14px;
-  text-align: right;
-  margin-bottom: 10px;
-  color: #666;
+.gov-header-text {
+  color: white;
 }
 
-.language-toggle-index a {
-  color: #0066cc;
+.gov-header-title {
+  font-family: 'Georgia', serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--gov-yellow);
+}
+
+.gov-header-subtitle {
+  font-family: 'Georgia', serif;
+  font-size: 11px;
+  color: #c4e8c0;
+  margin-top: 2px;
+}
+
+.gov-header-lang {
+  font-size: 12px;
+  color: #c4e8c0;
+}
+
+.gov-header-lang a {
+  color: var(--gov-yellow);
   text-decoration: underline;
 }
 
-.language-toggle-index .current-lang {
+.gov-header-lang .current-lang {
+  color: white;
   font-weight: bold;
-  color: #333;
 }
 
-/* Main layout for side-by-side nav and logo */
-.main-layout {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 30px auto;
-  max-width: 600px;
+/* ==================
+   Subheader yellow stripe
+   ================== */
+.gov-subheader {
+  background-color: var(--gov-yellow);
+  padding: 6px 20px;
+  font-size: 12px;
+  color: var(--gov-green-dark);
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid var(--gov-green-primary);
+}
+
+/* ==================
+    Layout Containers
+    ================== */
+.page-container {
+  max-width: 860px;
+  margin: 0 auto;
+  background-color: white;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+}
+
+.content-wrap {
+  text-align: left;
+  padding: 25px 30px;
+}
+
+.footer-wrapper {
+  max-width: 860px;
+  margin: 0 auto;
+  background-color: var(--gov-green-dark);
+  padding: 15px 30px;
+  color: #c4e8c0;
+  font-size: 12px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.footer-wrapper a {
+  color: var(--gov-yellow);
+}
+
+/* Language toggle for index page — hidden, moved to header */
+.language-toggle-index {
+  display: none;
+}
+
+/* ==================
+   Welcome Section
+   ================== */
+.welcome-section {
+  margin-bottom: 20px;
+}
+
+.welcome-section h1 {
+  font-size: 24px;
+  color: var(--gov-green-dark);
+  margin-bottom: 5px;
+}
+
+.tagline {
+  margin: 0;
 }
 
 .tagline-text {
   margin: 0;
   padding: 0;
+  font-style: italic;
+  font-size: 15px;
+  color: var(--gov-green-forest);
 }
 
 /* ==================
-    Navigation Menu
-    ================== */
-.menu-container {
-  width: 220px;
-  text-align: left;
-  background-color: #c0c0c0;
-  border: 2px outset #ffffff;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-  margin-right: 20px;
-}
-
-.menu-title {
-  background-color: #000080; /* Navy blue - classic Windows title bar */
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-  padding: 4px 5px;
-  text-align: center;
-  /* Add fun rainbow border to title */
-  border-bottom: 3px solid;
-  border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1;
-}
-
-.menu-links {
-  padding: 5px;
-  background-color: #e0e0e0;
-}
-
-/* ==================
-    Navigation Links
-    ================== */
-/* Base nav link style */
-.nav-link {
-  font-size: 14px;
-  display: block;
-  margin: 5px 0;
-  padding: 5px 8px;
-  background-color: #d4d0c8; /* Classic Windows button color */
-  border: 2px outset #ffffff;
-  text-decoration: none;
-  color: #000000;
-  transition: background-color 0.2s;
-}
-
-.nav-link:hover {
-  background-color: white;
-  color: var(--color-1);
-}
-
-.nav-link:active {
-  border: 2px inset #ffffff;
-  padding: 6px 6px 4px 10px; /* Adjust padding to simulate button press */
-}
-
-/* Fun colored nav buttons - each one gets a different color */
-.nav-mb2 {
-  background-color: #FFEC94; /* Light yellow */
-}
-
-.nav-about {
-  background-color: #FFD1DC; /* Light pink */
-}
-
-.nav-events {
-  background-color: #BAFCA2; /* Light green */
-}
-
-.nav-instagram {
-  background-color: #B4D8E7; /* Light blue */
-}
-
-.nav-contact {
-  background-color: #E0BBE4; /* Light purple */
-}
-
-.nav-icon {
-  width: 12px;
-  height: 12px;
-  margin-right: 5px;
-  vertical-align: middle;
-}
-
-/* ==================
-    Logo Styling
-    ================== */
-.single-logo {
-  margin-left: 10px;
+   Main Layout — side by side
+   ================== */
+.main-layout {
   display: flex;
-  align-items: center;
-  height: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+/* ==================
+   Official Seal (Logo)
+   ================== */
+.single-logo {
+  flex-shrink: 0;
 }
 
 .logo-wrapper {
   position: relative;
-  width: 240px;  /* Increased width */
-  height: 240px; /* Increased height to match navbar */
+  width: 180px;
+  height: 180px;
 }
 
 .logo-placeholder {
@@ -218,87 +227,168 @@ img {
   opacity: 1;
 }
 
-/* ==================
-    Counter Styles
-    ================== */
-/* Counter box with gray background */
-.counter-box {
-  background-color: #efefef;
-  border: 1px solid #000;
-  margin: 20px auto;
-  padding: 10px;
-  width: 90%;
-  max-width: 500px;
+.seal-label {
+  text-align: center;
+  font-size: 10px;
+  color: var(--gov-green-forest);
+  font-family: 'Georgia', serif;
+  margin-top: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-/* visitor counter */
+/* ==================
+    Navigation — Government link list
+    ================== */
+.menu-container {
+  flex: 1;
+}
+
+.menu-title {
+  background-color: var(--gov-green-primary);
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: 'Georgia', serif;
+  padding: 6px 12px;
+  letter-spacing: 0.5px;
+  border-bottom: 3px solid var(--gov-yellow);
+}
+
+.menu-links {
+  padding: 8px 0;
+}
+
+.nav-link {
+  font-size: 15px;
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: var(--gov-green-primary);
+  border-left: 3px solid transparent;
+  transition: all 0.15s;
+  font-family: 'Georgia', serif;
+}
+
+.nav-link:hover {
+  background-color: var(--gov-blue);
+  border-left: 3px solid var(--gov-green-bright);
+  color: var(--gov-green-dark);
+}
+
+.nav-link:active {
+  background-color: var(--gov-yellow);
+}
+
+/* Remove individual nav colors — uniform government style */
+.nav-mb2, .nav-mb3, .nav-about, .nav-events, .nav-instagram, .nav-contact {
+  background-color: transparent;
+}
+
+.nav-icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  margin-left: 0;
+  vertical-align: middle;
+}
+
+/* ==================
+    Visitor Counter
+    ================== */
+.counter-box {
+  background-color: var(--gov-blue);
+  border: 1px solid var(--gov-green-light);
+  border-left: 4px solid var(--gov-green-primary);
+  margin: 20px 0;
+  padding: 10px 15px;
+}
+
 .visitor-counter {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  font-size: 14px;
 }
 
 .counter-image {
-  height: 30px;
+  height: 25px;
   margin: 0;
   margin-left: 5px;
   vertical-align: middle;
 }
 
 /* ==================
-    90s Decorative Elements
+    Government Notices & Decorative
     ================== */
-/* Construction notice */
 .construction {
-  font-size: 16px;
-  margin: 20px auto;
-  padding: 5px 10px;
-  background-color: #ffffcc;
-  border: 2px dashed var(--color-3);
-  width: 80%;
-  max-width: 400px;
-  display: inline-block;
-  animation: rainbow-shadow 5s infinite;
+  font-size: 13px;
+  margin: 25px 0 0;
+  padding: 10px 15px;
+  background-color: var(--gov-yellow);
+  border: 1px solid var(--gov-green-muted);
+  border-left: 4px solid var(--gov-green-bright);
+  color: var(--gov-green-dark);
+  font-family: 'Georgia', serif;
+  display: block;
+  animation: none;
 }
 
-/* 90s-style NEW badge */
+/* NEW badge */
 .new-badge {
   display: inline-block;
-  background-color: red;
-  color: yellow;
-  font-size: 10px;
+  background-color: var(--gov-green-bright);
+  color: var(--gov-yellow);
+  font-size: 9px;
   font-weight: bold;
-  padding: 1px 4px;
-  margin-left: 5px;
-  border: 1px solid #fff;
-  animation: blink 1s infinite;
-  font-family: Arial, sans-serif;
+  padding: 1px 5px;
+  margin-left: 6px;
+  border-radius: 2px;
+  font-family: 'Georgia', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  animation: blink 1.5s infinite;
 }
 
+/* Footer styles */
 .browser-compatibility {
-  margin: 10px 0;
-  padding: 5px;
-  background-color: #efefef;
-  border: 1px solid #999;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 
 .browser-logos {
-  display: block;
-  margin: 5px auto;
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .browser-icon {
   width: auto;
-  height: 50px;
-  margin: 0 5px;
+  height: 30px;
+  margin: 0 3px;
   vertical-align: middle;
+}
+
+.footer-text {
+  color: #c4e8c0;
+  text-align: left;
+  font-size: 12px;
+  margin: 3px 0;
+}
+
+.gov-footer-official {
+  font-size: 11px;
+  color: var(--gov-yellow);
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--gov-green-forest);
+  font-family: 'Georgia', serif;
 }
 
 @media print {
   body:after {
-    content: "Why are you printing this page? Save a tree!";
+    content: "Printing government documents without authorization may violate Bureau Directive 7.3.2";
     display: block;
     text-align: center;
     font-size: 14px;
@@ -309,19 +399,6 @@ img {
 /* ==================
     Animations
     ================== */
-/* Add a 90s-style animated shadow to construction banner */
-@keyframes rainbow-shadow {
-  0% { text-shadow: 2px 2px 0px red; }
-  14% { text-shadow: 2px 2px 0px orange; }
-  28% { text-shadow: 2px 2px 0px yellow; }
-  42% { text-shadow: 2px 2px 0px green; }
-  57% { text-shadow: 2px 2px 0px blue; }
-  71% { text-shadow: 2px 2px 0px indigo; }
-  85% { text-shadow: 2px 2px 0px violet; }
-  100% { text-shadow: 2px 2px 0px red; }
-}
-
-/* Classic blinking animation */
 @keyframes blink {
   0% { opacity: 1; }
   50% { opacity: 0.3; }
@@ -333,14 +410,35 @@ img {
     ================== */
 @media (max-width: 850px) {
   .page-container, .footer-wrapper {
-    margin: 10px;
+    margin: 0;
     width: auto;
+    border-left: none;
+    border-right: none;
   }
 }
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 30px;
+    font-size: 20px;
+  }
+
+  .gov-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px 15px;
+  }
+
+  .gov-header-title {
+    font-size: 16px;
+  }
+
+  .gov-header-lang {
+    align-self: flex-end;
+  }
+
+  .content-wrap {
+    padding: 15px;
   }
 
   .counter-image {
@@ -352,50 +450,47 @@ img {
     font-size: 12px;
   }
 
-  /* Reverse the flex direction to put logo on top */
   .main-layout {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 100%;
   }
 
-  /* Center the logo and adjust spacing */
   .single-logo {
-    margin-left: 0;
-    margin-bottom: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 15px;
+    order: -1;
   }
 
-  /* Adjust logo size for mobile */
   .logo-wrapper {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
   }
 
-  /* Make the menu take full width */
   .menu-container {
-    margin-right: 0;
-    width: 95%;
-    max-width: 280px;
+    width: 100%;
   }
 
   .nav-link {
-    font-size: 14px;  /* Slightly larger font */
-    padding: 6px 10px; /* More horizontal padding */
-    white-space: nowrap; /* Prevent text wrapping */
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .footer-wrapper {
+    padding: 12px 15px;
   }
 }
 
 @media (max-width: 350px) {
   .nav-link {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .logo-wrapper {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .gov-header-title {
+    font-size: 14px;
   }
 }
