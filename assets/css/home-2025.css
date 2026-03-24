@@ -295,26 +295,18 @@ a.gov-header-left,
 }
 
 /* ==================
-    Visitor Counter
+    Visitor Counter (in footer)
     ================== */
-.counter-box {
-  background-color: var(--gov-blue);
-  border: 1px solid var(--gov-green-light);
-  border-left: 4px solid var(--gov-green-primary);
-  margin: 20px 0;
-  padding: 10px 15px;
-}
-
 .visitor-counter {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
-  font-size: 14px;
+  font-size: 11px;
+  color: #c4e8c0;
+  margin-bottom: 8px;
 }
 
 .counter-image {
-  height: 25px;
+  height: 18px;
   margin: 0;
   margin-left: 5px;
   vertical-align: middle;
