@@ -315,17 +315,40 @@ a.gov-header-left,
 /* ==================
     Government Notices & Decorative
     ================== */
-.construction {
-  font-size: 13px;
+/* ==================
+    Government Alert Marquee
+    ================== */
+.gov-alert {
+  background-color: var(--gov-green-dark);
+  border-top: 3px solid var(--gov-yellow);
+  border-bottom: 3px solid var(--gov-yellow);
   margin: 25px 0 0;
-  padding: 10px 15px;
-  background-color: var(--gov-yellow);
-  border: 1px solid var(--gov-green-muted);
-  border-left: 4px solid var(--gov-green-bright);
-  color: var(--gov-green-dark);
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.gov-alert-marquee {
+  display: inline-block;
+  animation: marquee 30s linear infinite;
   font-family: 'Georgia', serif;
-  display: block;
-  animation: none;
+  font-size: 13px;
+  color: var(--gov-yellow);
+  letter-spacing: 0.3px;
+  padding-left: 100%;
+}
+
+.gov-alert-marquee span {
+  display: inline-block;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.construction {
+  display: none;
 }
 
 /* NEW badge */
