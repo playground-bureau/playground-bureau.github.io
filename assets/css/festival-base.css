@@ -1,3 +1,5 @@
+/* Festival design system — shared across all editions */
+
 @font-face {
   font-family: "CustomComicSans";
   src: url("../fonts/COMICSANS.TTF");
@@ -8,6 +10,18 @@
   src: url("../fonts/COMICSANSBOLD.TTF");
 }
 
+/* Festival Color Palette */
+:root {
+  --festival-blue: #0016BE;
+  --festival-yellow: #FFBC00;
+  --festival-magenta: #FF00AC;
+  --festival-cyan: #52CCFF;
+  --festival-pink: #FFA1E3;
+  --festival-green: #00A448;
+  --festival-vanilla: #F9ECB6;
+  --festival-sage: #7EC86E;
+}
+
 strong {
   font-family: "CustomComicSansBold";
 }
@@ -15,7 +29,6 @@ strong {
 body {
   text-align: center;
   font-family: "CustomComicSans", "Comic Sans MS", sans-serif;
-  background-color: var(--color-2);
 }
 
 .festival-banner img {
@@ -41,6 +54,7 @@ body {
 .section-title {
   font-family: "CustomComicSansBold";
   font-size: 20px;
+  text-align: center;
 }
 
 .festival-info-block {
@@ -62,12 +76,6 @@ body {
   width: 100%;
   height: auto;
   margin: 0;
-}
-
-@media (max-width: 768px) {
-  .festival-info-image {
-    width: 100%;
-  }
 }
 
 .ticket-link {
@@ -150,7 +158,6 @@ body {
   margin: 0;
 }
 
-/* contact-info */
 .contact-info {
   display: inline;
   text-align: center;
@@ -166,6 +173,20 @@ body {
   font-size: 20px;
 }
 
-.sold-out {
-  color: red;
+.language-toggle {
+  font-family: "CustomComicSans", "Comic Sans MS", cursive;
+  font-size: 14px;
+  text-align: right;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.language-toggle a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.language-toggle .current-lang {
+  font-weight: bold;
+  color: #333;
 }

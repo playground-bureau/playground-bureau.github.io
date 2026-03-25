@@ -1,0 +1,9 @@
+/* Festival 2024 — edition-specific overrides */
+
+body {
+  background-color: var(--festival-yellow);
+}
+
+.sold-out {
+  color: red;
+}

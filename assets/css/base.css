@@ -18,15 +18,6 @@
   --gov-green-light: #5d9230;
   --gov-green-muted: #72852c;
 
-  /* Legacy color aliases — preserved for festival-2024/2025 pages */
-  --color-1: #0016BE;
-  --color-2: #FFBC00;
-  --color-3: #FF00AC;
-  --color-4: #52CCFF;
-  --color-5: #FFA1E3;
-  --color-6: #00A448;
-  --color-7: #F9ECB6;
-  --color-8: #7EC86E;
 }
 
 /* Legacy color classes */
