@@ -283,11 +283,6 @@ a.gov-header-left,
   background-color: var(--gov-yellow);
 }
 
-/* Remove individual nav colors — uniform government style */
-.nav-mb2, .nav-mb3, .nav-about, .nav-events, .nav-instagram, .nav-contact {
-  background-color: transparent;
-}
-
 .nav-icon {
   width: 12px;
   height: 12px;
@@ -348,10 +343,6 @@ a.gov-header-left,
 @keyframes marquee {
   0% { transform: translateX(0); }
   100% { transform: translateX(-100%); }
-}
-
-.construction {
-  display: none;
 }
 
 /* NEW badge */

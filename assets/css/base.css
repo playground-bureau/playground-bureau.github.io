@@ -225,10 +225,6 @@ input[type="checkbox"] {
   }
 
   .content-with-image img.float-right {
-    text-align: center;
-  }
-
-  .content-with-image img.float-right {
     max-width: 300px;
   }
 }
