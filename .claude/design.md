@@ -31,12 +31,24 @@ The Playground Bureau website has been redesigned from a "90s personal blog" aes
 | `#5d9230` | `--gov-green-light` | Lighter accents |
 | `#72852c` | `--gov-green-muted` | Borders on notices |
 
-### Legacy Colors
-The original `--color-1` through `--color-8` CSS variables are **preserved unchanged** in `base.css` so that festival-2024 and festival-2025 pages (which use them) remain unaffected.
+### Festival Colors (defined in `festival-base.css`)
+| Hex | CSS Variable | Used by |
+|-----|-------------|---------|
+| `#0016BE` | `--festival-blue` | Ticket links |
+| `#FFBC00` | `--festival-yellow` | Festival 2024 background |
+| `#FF00AC` | `--festival-magenta` | Available |
+| `#52CCFF` | `--festival-cyan` | Available |
+| `#FFA1E3` | `--festival-pink` | Available |
+| `#00A448` | `--festival-green` | Ticket link hover |
+| `#F9ECB6` | `--festival-vanilla` | Available |
+| `#7EC86E` | `--festival-sage` | Festival 2025 background |
 
 ## Page Structure
 
-### Government Header (all redesigned pages)
+### Government Header (all gov-portal pages)
+
+The header is injected by `gov-layout.js` from a `<div id="gov-header">` placeholder with `data-lang` and optional `data-lang-url` attributes. Single source of truth for the header template.
+
 ```
 ┌─────────────────────────────────────────────────┐
 │ [seal] PLAYGROUND BUREAU          English | CA  │  ← dark green bg, yellow title
@@ -50,7 +62,7 @@ The original `--color-1` through `--color-8` CSS variables are **preserved uncha
 ### Homepage Layout
 ```
 Welcome to the Official Playground Bureau Web Portal
-Your trusted authority on Goodtimes mass-production since 1980
+Your trusted authority on citizen Goodtimes levels
 ───────────────────────────────────────────────────
 [Spinning Logo]    │ BUREAU SERVICES & INFORMATION
 Official Bureau    │ ● Monkey Business 3 — Annual Operations [NEW]
@@ -61,7 +73,7 @@ Official Bureau    │ ● Monkey Business 3 — Annual Operations [NEW]
 
 ▎ You are visitor # [counter]
 
-PUBLIC ADVISORY: This web portal has been under construction since 1999...
+PUBLIC ADVISORY: The Separatoxin epidemic is ongoing...
 ```
 
 ### Navigation Style
@@ -70,38 +82,32 @@ PUBLIC ADVISORY: This web portal has been under construction since 1999...
 - No more Windows 95 button style — replaced with clean government link list
 
 ### Footer
-Dark green background with light green text. Includes copyright notice with bureaucratic humor ("Unauthorized production of Goodtimesium is a violation of Bureau Directive 12.7(b)").
+Dark green background with light green text. Includes copyright notice with bureaucratic humor ("Unauthorized measurement of Goodtimesium levels is a violation of Bureau Directive 12.7(b)").
 
-## Files Changed
+## CSS Architecture
 
-### CSS
-- `base.css` — New `--gov-*` CSS variables added; legacy `--color-*` variables preserved; `.clickable` now uses green; Georgia font
-- `home-2025.css` — Complete rewrite: government header, nav link list, counter box, construction notice, footer
-- `text-blocks.css` — Restyled: green headings with underline borders, green nav buttons
-- `about-us.css` — Restyled to match government theme
-- `festival-2026.css` — Background color updated to `--gov-blue`
+### Government Portal Design System
+- `base.css` — shared reset, utilities, `--gov-*` color variables, image helpers
+- `gov-portal.css` — header, footer, nav, layout, typography (Georgia/serif), alert marquee, animations
+- `gov-content.css` — text-block containers, navigation buttons, section headings for content pages
 
-### HTML (structural changes)
-- `index.html` / `index-ca.html` — New gov header, restructured nav, bureaucratic copy
-- `bureau-history.html` / `bureau-history-ca.html` — Gov header added, footer updated
-- `our-events.html` — Gov header added, title changed to "Archive of Bureau Operations"
-- `about-us.html` — Gov header added, footer updated
-- `festival-2026.html` / `festival-2026-ca.html` — Gov header added, subheader text
+### Festival Design System
+- `festival-base.css` — shared Comic Sans font-face, `--festival-*` color palette, layout containers, ticket links, program lists, language toggle
+- `festival-2024.css` — 2024-specific: yellow background, sold-out color
+- `festival-2025.css` — 2025-specific: sage background, shining text animation, image overrides, final ticket link styles
+- `workshops-2025.css` — workshop page layout
 
-### NOT Changed (deliberately)
-- `festival-2024.html` and its CSS — old festival page, kept as-is
-- `festival-2025.html` / `festival-2025-ca.html` and `festival-2025.css` — kept as-is
-- `workshops-2025.css` — kept as-is
-- `important-reminder-*.html` — kept as-is (they use festival-2025.css)
-- `festival-2025-helping-hands.html` — kept as-is
-- `hq.html` — kept as-is (uses festival-2025.css)
-- `index-2024.html` — old homepage, kept as-is
-- All images and JS files — unchanged
+### Archived
+- `home-2024.css` — old 2024 homepage design (retro blog aesthetic)
+
+### JS
+- `gov-layout.js` — injects gov header + hr + subheader from template, configured by data attributes
+- `random-logo.js` — randomly selects one of 15 spinning logo GIFs
+- `important-reminder-2.js` — checkbox/consent gate for ticket link
 
 ## Typography
-- **Headings**: Georgia, serif (feels institutional but readable)
-- **Body**: Georgia, 'Times New Roman', serif
-- **Old festival pages**: Still use Comic Sans (their own CSS overrides)
+- **Gov pages**: Georgia, serif (feels institutional but readable)
+- **Festival pages**: Comic Sans via custom @font-face (CustomComicSans / CustomComicSansBold)
 
 ## Key Design Elements
 - **Gradient HR**: `linear-gradient(to right, dark green, bright green, yellow)` — colorful but official
@@ -109,3 +115,6 @@ Dark green background with light green text. Includes copyright notice with bure
 - **NEW badge**: Green background with yellow text, still blinks (some things never change)
 - **"Official Bureau Seal" label**: Below the spinning logo — deadpan humor
 - **Print CSS**: "Printing government documents without authorization may violate Bureau Directive 7.3.2"
+
+## Non-deployed Pages
+- `_archive/hq.html` — community space project page, excluded from GitHub Pages by Jekyll's `_` prefix convention
