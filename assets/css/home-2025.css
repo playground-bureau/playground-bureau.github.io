@@ -43,6 +43,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: left;
 }
 
 a.gov-header-left,
@@ -110,6 +111,7 @@ a.gov-header-left,
   font-family: 'Georgia', serif;
   letter-spacing: 0.5px;
   border-bottom: 2px solid var(--gov-green-primary);
+  text-align: left;
 }
 
 /* ==================
