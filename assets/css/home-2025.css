@@ -59,7 +59,7 @@ a.gov-header-left,
   width: 50px;
   height: 50px;
   object-fit: contain;
-  margin: 0;
+  margin: 0 !important;
   border-radius: 50%;
   background: var(--gov-yellow);
   padding: 3px;
