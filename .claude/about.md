@@ -54,17 +54,17 @@ A quasi-government agency elevated from a humble parks office to handle mass pro
 A renegade radical activist/revolutionary splinter group, rumored to include disgruntled ex-Bureau agents. They wear tinfoil hats to insulate from "7G." They think the Bureau is too slow and too accommodating of corporate interests. They sneak into Monkey Business to cause trouble — defacing corporate installations, stealing speakers to set up secret parties with edgier vibes. Think Extinction Rebellion vs. the EPA.
 
 **CARREFOOGLE CORPORATION (CFG)** — The corporate antagonist
-Represents commercial interests in this universe. In MB2, they sponsored the "scrolling area" (a satirical riff on how Philip Morris sponsors smoking areas). The Syndicate suspects CFG is either contributing to Separatonin or profiting from it. In MB3, the narrative arc centers on Carrefoogle sponsoring the entire festival.
+Represents commercial interests in this universe. In MB2, they sponsored the "scrolling area" (a satirical riff on how Philip Morris sponsors smoking areas). The Syndicate suspects CFG is either contributing to Separatoxin or profiting from it. In MB3, the narrative arc centers on Carrefoogle sponsoring the entire festival.
 
 ### Key Concepts
 
 **GOODTIMES** — The government's measure of societal success, replacing GDP. What the Bureau is tasked with maximizing.
 
-**GOODTIMESIUM** — The particle (quantum-chemical-neurological, kept intentionally vague) that constitutes Goodtimes. What photons are to light, Goodtimesium is to Goodtimes. The Bureau builds devices to measure and produce it.
+**GOODTIMESIUM** — A phenomenon (quantum-chemical-neurological, kept intentionally vague) that constitutes Goodtimes. Something emitted or radiated by people — more like radiation than a product. The Bureau measures, studies, and works to elevate Goodtimesium levels, but does not fully understand it yet. It is not produced, consumed, or manufactured — it is the quantified measurement of how good of a time someone is having.
 
-**SEPARATONIN** (also referred to as SEPARATOXIN) — The opposing force. A mysterious phenomenon spreading through the population, making people hang out less and spend more time alone. Separatonin and Goodtimesium repel each other. The Bureau's core mission is combating this.
+**SEPARATOXIN** — The opposing force. A mysterious phenomenon spreading through the population, making people hang out less and spend more time alone. Separatoxin and Goodtimesium repel each other. The Bureau's core mission is combating this.
 
-**MONKEY BUSINESS** — In-universe, stands for "Meticulously Orchestrated Neurokinetic Kontrolled Environment for the Yearly Boosting of Universal Sociability, Instilling Neighborly Euphoria, and Spreading Synergy." It's the Bureau's annual operation that gathers willing participants to experiment with new Goodtimesium production methods and mass-produce it so participants can bring it home and spread it "like radioactive glitter."
+**MONKEY BUSINESS** — In-universe, stands for "Meticulously Orchestrated Neurokinetic Kontrolled Environment for the Yearly Boosting of Universal Sociability, Instilling Neighborly Euphoria, and Spreading Synergy." It's the Bureau's annual operation that gathers willing participants in conditions designed to elevate Goodtimesium emissions, so participants can carry elevated levels home and spread them "like radioactive glitter."
 
 ### Narrative Tone
 
@@ -78,7 +78,7 @@ For the third edition, the central storyline involves Carrefoogle Corporation sp
 
 ## What the Festival Actually Feels Like
 
-Imagine arriving at a rural site near Barcelona. You take a "Separatonin vaccine" (an orange juice shot) at the entrance. You're greeted by actors in character as Bureau officials processing your intake. Over the next three days, professional chefs cook you beautiful meals, DJs and musicians play through the nights, workshops run during the day, theatrical skits and Syndicate "interventions" happen unexpectedly, and the whole thing builds toward some kind of narrative climax. There's no money changing hands inside. Everyone is there because they want to be part of making something together. You leave sleep-deprived, well-fed, and genuinely moved.
+Imagine arriving at a rural site near Barcelona. You take a "Separatoxin vaccine" (an orange juice shot) at the entrance. You're greeted by actors in character as Bureau officials processing your intake. Over the next three days, professional chefs cook you beautiful meals, DJs and musicians play through the nights, workshops run during the day, theatrical skits and Syndicate "interventions" happen unexpectedly, and the whole thing builds toward some kind of narrative climax. There's no money changing hands inside. Everyone is there because they want to be part of making something together. You leave sleep-deprived, well-fed, and genuinely moved.
 
 ---
 
