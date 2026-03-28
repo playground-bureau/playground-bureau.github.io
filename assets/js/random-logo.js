@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // Array of available GIF numbers
   const gifNumbers = Array.from({ length: 15 }, (_, i) => i + 1)
 
-  // Randomly select a GIF number
-  const randomNumber = gifNumbers[Math.floor(Math.random() * gifNumbers.length)]
+  // Use logo-gif-1
+  const randomNumber = 1
 
   // Construct the GIF filename
   const gifFilename = `assets/images/logos/logo-gif-${randomNumber}.gif`

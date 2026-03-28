@@ -174,4 +174,99 @@
     width: auto;
     margin: 0 0 20px 0;
   }
+  .acronym-columns {
+    display: flex;
+    gap: 20px;
+  }
+  .acronym-col {
+    flex: 1;
+  }
+}
+
+/* Shining text effect */
+@keyframes shining {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.shining-text {
+  background: linear-gradient(
+    90deg,
+    var(--gov-green-dark) 0%,
+    var(--gov-green-dark) 40%,
+    var(--gov-yellow) 50%,
+    #ffff00 55%,
+    var(--gov-yellow) 60%,
+    var(--gov-green-dark) 70%,
+    var(--gov-green-dark) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shining 4s linear infinite;
+  font-weight: bold;
+}
+
+/* CTA registration button */
+.cta-register {
+  display: inline-block;
+  padding: 16px 40px;
+  background-color: var(--gov-yellow);
+  color: var(--gov-green-dark);
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid var(--gov-green-dark);
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.cta-register:hover {
+  background-color: var(--gov-green-dark);
+  color: var(--gov-yellow);
+}
+
+.cta-register:active {
+  background-color: var(--gov-green-primary);
+  color: white;
+}
+
+/* Consent checkbox + gated ticket link */
+.consent-checkbox {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #eef7ee;
+  border: 1px solid var(--gov-green-primary);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.consent-checkbox input[type="checkbox"] {
+  margin-right: 8px;
+  vertical-align: top;
+  margin-top: 4px;
+}
+
+.consent-checkbox label {
+  cursor: pointer;
+}
+
+#final-ticket-link {
+  margin-top: 20px;
+}
+
+#final-ticket-link a {
+  display: block;
+  text-align: center;
+  opacity: 0.3;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+#final-ticket-link a.enabled {
+  opacity: 1;
+  pointer-events: auto;
 }

@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
   header.outerHTML =
     '<div class="gov-header">' +
       '<a href="' + homeUrl + '" class="gov-header-left">' +
-        '<img src="assets/images/logos/logo-static.jpg" alt="' + sealAlt + '" class="gov-header-seal" />' +
+        '<img src="assets/images/logos/logo-warm.jpg" alt="' + sealAlt + '" class="gov-header-seal" />' +
         '<div class="gov-header-text">' +
           '<div class="gov-header-title">PLAYGROUND BUREAU</div>' +
           '<div class="gov-header-subtitle">' + subtitle + '</div>' +
