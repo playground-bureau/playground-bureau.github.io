@@ -169,6 +169,26 @@
 }
 
 @media (max-width: 768px) {
+  .text-block-section {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .gov-info-table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 -10px;
+    padding: 0 10px;
+  }
+
+  .gov-info-table {
+    font-size: 12px;
+  }
+
+  .gov-info-table td:first-child {
+    width: auto;
+  }
+
   .acronym-panel {
     float: none;
     width: auto;
