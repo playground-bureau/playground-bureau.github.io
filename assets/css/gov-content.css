@@ -169,6 +169,11 @@
 }
 
 @media (max-width: 768px) {
+  .text-block-container {
+    width: 100%;
+    min-width: 0;
+  }
+
   .text-block-section {
     max-width: 100%;
     box-sizing: border-box;
@@ -177,8 +182,6 @@
   .gov-info-table-scroll {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    margin: 0 -10px;
-    padding: 0 10px;
   }
 
   .gov-info-table {
@@ -187,6 +190,32 @@
 
   .gov-info-table td:first-child {
     width: auto;
+  }
+
+  .gov-info-table th {
+    white-space: normal;
+  }
+
+  /* Stack key/value tables vertically on mobile */
+  .gov-info-table:not(.gov-info-table-scroll .gov-info-table) tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gov-info-table:not(.gov-info-table-scroll .gov-info-table) td:first-child {
+    white-space: normal;
+    border-bottom: none;
+    padding-bottom: 2px;
+    font-size: 11px;
+  }
+
+  .gov-info-table:not(.gov-info-table-scroll .gov-info-table) td:last-child {
+    padding-top: 2px;
+  }
+
+  /* Pricing table: allow text to wrap on mobile */
+  .gov-info-table-scroll .gov-info-table td {
+    white-space: normal;
   }
 
   .acronym-panel {
