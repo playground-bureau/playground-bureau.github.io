@@ -62,7 +62,7 @@ The header is injected by `gov-layout.js` from a `<div id="gov-header">` placeho
 ### Homepage Layout
 ```
 Welcome to the Official Playground Bureau Web Portal
-Your trusted authority on citizen Goodtimes levels
+Official body for the monitoring and elevation of Goodtimesium
 ───────────────────────────────────────────────────
 [Spinning Logo]    │ BUREAU SERVICES & INFORMATION
 Official Bureau    │ ● Monkey Business 3 — Annual Operations [NEW]
