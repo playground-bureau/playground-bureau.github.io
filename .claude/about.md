@@ -43,7 +43,7 @@ The festival is wrapped in an elaborate satirical fictional universe that plays 
 
 ### The Universe
 
-In this parallel timeline, the year is 1980. Catherine "Cat" Sandwich, a previously unknown perennial candidate, defeats Ronald Reagan in a landslide US presidential election with a platform that shifts government focus from GDP to "Goodtimes." This changes everything.
+In this parallel timeline, the year is 1980. Catherine "Cat" Sandwich, a completely unknown candidate, is elected head of state in a landslide victory with a platform that shifts government focus from GDP to "Goodtimes." This changes everything. (Note: the universe is deliberately not country-specific. It alludes to the Thatcher/Reagan era and the road not taken, but is not set in any particular nation.)
 
 ### Key Entities
 
