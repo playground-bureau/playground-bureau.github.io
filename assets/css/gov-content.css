@@ -168,6 +168,22 @@
   background-color: #eef7ee;
 }
 
+/* Row-header variant: headers in top row, not left column */
+.gov-info-table-rows td:first-child {
+  font-weight: normal;
+  white-space: normal;
+  width: auto;
+  background-color: transparent;
+}
+
+.gov-info-table-rows th {
+  padding: 5px 10px;
+  background-color: #eef7ee;
+  border: 1px solid #ccc;
+  text-align: left;
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
   .text-block-container {
     width: 100%;
