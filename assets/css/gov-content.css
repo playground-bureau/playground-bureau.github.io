@@ -212,21 +212,50 @@
     white-space: normal;
   }
 
-  /* Stack key/value tables vertically on mobile */
-  .gov-info-table:not(.gov-info-table-scroll .gov-info-table) tr {
+  /* Stack key/value tables vertically on mobile (not row-header or scroll variants) */
+  .gov-info-table:not(.gov-info-table-rows):not(.gov-info-table-scroll .gov-info-table) tr {
     display: flex;
     flex-direction: column;
   }
 
-  .gov-info-table:not(.gov-info-table-scroll .gov-info-table) td:first-child {
+  .gov-info-table:not(.gov-info-table-rows):not(.gov-info-table-scroll .gov-info-table) td:first-child {
     white-space: normal;
     border-bottom: none;
     padding-bottom: 2px;
     font-size: 11px;
   }
 
-  .gov-info-table:not(.gov-info-table-scroll .gov-info-table) td:last-child {
+  .gov-info-table:not(.gov-info-table-rows):not(.gov-info-table-scroll .gov-info-table) td:last-child {
     padding-top: 2px;
+  }
+
+  /* Row-header tables: card layout on mobile */
+  .gov-info-table-rows thead,
+  .gov-info-table-rows tr:first-child th {
+    display: none;
+  }
+
+  .gov-info-table-rows tr {
+    display: block;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    background-color: #fafafa;
+  }
+
+  .gov-info-table-rows td {
+    display: block;
+    border: none;
+    padding: 2px 0;
+  }
+
+  .gov-info-table-rows td::before {
+    content: attr(data-label) ": ";
+    font-weight: bold;
+    font-size: 11px;
+    color: var(--gov-green-forest);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
   }
 
   /* Pricing table: allow text to wrap on mobile */
