@@ -308,7 +308,12 @@
 
   /* Pricing table: allow text to wrap on mobile */
   .gov-info-table-scroll .gov-info-table td {
-    white-space: normal;
+    white-space: normal !important;
+    word-break: break-word;
+  }
+
+  .gov-info-table-scroll .gov-info-table {
+    width: 100%;
   }
 
   .acronym-panel {
