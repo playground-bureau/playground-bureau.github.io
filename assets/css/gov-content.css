@@ -353,6 +353,16 @@
   margin-bottom: 8px;
 }
 
+.gov-notice-label--alert {
+  background-color: orangered;
+  color: #fff;
+  animation: blink-alert 1s step-end infinite;
+}
+
+@keyframes blink-alert {
+  50% { opacity: 0.15; }
+}
+
 /* Shining text effect */
 @keyframes shining {
   0% { background-position: -200% center; }
