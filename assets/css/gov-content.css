@@ -155,33 +155,73 @@
   margin-bottom: 15px;
 }
 
+.gov-info-table th {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #eef7ee;
+  text-align: left;
+  font-weight: bold;
+}
+
 .gov-info-table td {
   padding: 5px 10px;
   border: 1px solid #ccc;
   vertical-align: top;
 }
 
-.gov-info-table td:first-child {
+.gov-info-table:not(.gov-info-table-plain) td:first-child {
   font-weight: bold;
   white-space: nowrap;
   width: 160px;
   background-color: #eef7ee;
 }
 
-/* Row-header variant: headers in top row, not left column */
-.gov-info-table-rows td:first-child {
-  font-weight: normal;
-  white-space: normal;
-  width: auto;
-  background-color: transparent;
+/* Archive cards */
+.archive-cards {
+  display: flex;
+  gap: 16px;
 }
 
-.gov-info-table-rows th {
-  padding: 5px 10px;
-  background-color: #eef7ee;
-  border: 1px solid #ccc;
-  text-align: left;
+.archive-card {
+  flex: 1;
+  border: 1px solid #d4d4d4;
+  border-left: 3px solid #8b5e8b;
+  padding: 14px 16px;
+  background-color: #fcfcfa;
+}
+
+.archive-card-title {
+  font-family: 'Georgia', serif;
+  font-size: 15px;
   font-weight: bold;
+  color: var(--gov-green-dark);
+}
+
+.archive-card-meta {
+  font-family: 'Georgia', serif;
+  font-size: 13px;
+  color: #666;
+  margin-top: 3px;
+}
+
+.archive-cta {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 16px;
+  background-color: transparent;
+  color: var(--gov-green-primary);
+  font-family: 'Georgia', serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  border: 1.5px solid var(--gov-green-primary);
+  transition: all 0.15s;
+}
+
+.archive-cta:hover {
+  background-color: var(--gov-green-primary);
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -229,33 +269,41 @@
     padding-top: 2px;
   }
 
-  /* Row-header tables: card layout on mobile */
-  .gov-info-table-rows thead,
-  .gov-info-table-rows tr:first-child th {
+  .archive-cards {
+    flex-direction: column;
+  }
+
+  /* Stack plain tables inside scroll wrappers into cards on mobile */
+  .gov-info-table-scroll .gov-info-table-plain tr:first-child {
     display: none;
   }
 
-  .gov-info-table-rows tr {
+  .gov-info-table-scroll .gov-info-table-plain tr {
     display: block;
     margin-bottom: 12px;
     border: 1px solid #ccc;
-    padding: 8px 10px;
-    background-color: #fafafa;
   }
 
-  .gov-info-table-rows td {
-    display: block;
+  .gov-info-table-scroll .gov-info-table-plain td {
+    display: flex;
     border: none;
-    padding: 2px 0;
+    border-bottom: 1px solid #eee;
+    white-space: normal !important;
+    word-break: break-all;
   }
 
-  .gov-info-table-rows td::before {
-    content: attr(data-label) ": ";
+  .gov-info-table-scroll .gov-info-table-plain td:last-child {
+    border-bottom: none;
+  }
+
+  .gov-info-table-scroll .gov-info-table-plain td::before {
+    content: attr(data-label);
     font-weight: bold;
+    min-width: 90px;
+    margin-right: 10px;
+    flex-shrink: 0;
     font-size: 11px;
-    color: var(--gov-green-forest);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    color: #555;
   }
 
   /* Pricing table: allow text to wrap on mobile */
