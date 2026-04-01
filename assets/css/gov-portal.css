@@ -132,6 +132,7 @@ a.gov-header-left,
 .content-wrap {
   text-align: left;
   padding: 25px 30px;
+  box-sizing: border-box;
 }
 
 .footer-wrapper {

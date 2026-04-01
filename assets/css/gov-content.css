@@ -5,6 +5,11 @@
   justify-content: center;
 }
 
+.text-block-container img {
+  max-width: 100%;
+  height: auto;
+}
+
 .text-block-image {
   margin: 0;
   padding: 10px;
@@ -90,6 +95,7 @@
   .navigation-button a {
     font-size: 13px;
     padding: 6px 12px;
+    white-space: normal;
   }
 }
 
@@ -228,6 +234,13 @@
   .text-block-container {
     width: 100%;
     min-width: 0;
+    box-sizing: border-box;
+    padding: 0 16px;
+  }
+
+  .text-block-container .d-flex-center {
+    min-width: 0;
+    width: 100%;
   }
 
   .text-block-section {
