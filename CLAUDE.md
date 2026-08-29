@@ -8,7 +8,7 @@ bin/dev  # starts on http://localhost:8766
 
 ## Translations
 
-Pages have English (default) and Catalan (`-ca` suffix) versions. When updating copy on any page, always update the corresponding translation too (e.g. `index.html` ↔ `index-ca.html`).
+Pages have English (default), Catalan (`-ca` suffix), and Spanish (`-es` suffix) versions. When updating copy on any page, always update all corresponding translations too (e.g. `index.html` ↔ `index-ca.html` ↔ `index-es.html`). Not every page has every language — check before assuming.
 
 ## Key Non-Obvious Details
 
