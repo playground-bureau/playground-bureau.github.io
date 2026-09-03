@@ -366,6 +366,11 @@ a.gov-header-left,
   animation: blink 1.5s infinite;
 }
 
+.soldout-badge {
+  background-color: darkred;
+  color: #fff;
+}
+
 /* Footer styles */
 .browser-compatibility {
   margin: 0;
