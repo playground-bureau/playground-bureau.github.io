@@ -469,6 +469,39 @@
   color: white;
 }
 
+/* Sold-out sign (unclickable stamp) */
+.cta-soldout {
+  display: inline-block;
+  padding: 16px 40px;
+  color: darkred;
+  font-family: 'Georgia', serif;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border: 4px double darkred;
+  transform: rotate(-2deg);
+  user-select: none;
+  cursor: default;
+}
+
+.cta-soldout-lg {
+  font-size: 34px;
+  padding: 24px 70px;
+  border-width: 6px;
+  letter-spacing: 5px;
+}
+
+.cta-soldout-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-8deg);
+  background: rgba(255, 255, 255, 0.75);
+  pointer-events: none;
+  z-index: 2;
+}
+
 /* Consent checkbox + gated ticket link */
 .consent-checkbox {
   margin-top: 30px;
