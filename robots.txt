@@ -1,3 +1,5 @@
-# Block all search engine crawlers
+# Crawling is intentionally ALLOWED so search engines can see the
+# noindex meta tags on every page and drop them from their indexes.
+# Blocking crawling here would freeze the old cached copies in place.
 User-agent: *
-Disallow: /
+Disallow:
