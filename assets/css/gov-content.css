@@ -492,6 +492,13 @@
   letter-spacing: 5px;
 }
 
+.cta-soldout-sub {
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-top: 8px;
+}
+
 .cta-soldout-overlay {
   position: absolute;
   top: 50%;
