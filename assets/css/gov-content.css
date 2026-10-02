@@ -111,7 +111,7 @@
   font-family: 'Georgia', serif;
   font-size: 11.5px;
   line-height: 1.85;
-  color: #c4e8c0;
+  color: var(--gov-blush);
   border: 1px solid var(--gov-green-forest);
   border-top: 3px solid var(--gov-yellow);
 }
@@ -164,7 +164,7 @@
 .gov-info-table th {
   padding: 5px 10px;
   border: 1px solid #ccc;
-  background-color: #eef7ee;
+  background-color: #F8EFF5;
   text-align: left;
   font-weight: bold;
 }
@@ -179,7 +179,7 @@
   font-weight: bold;
   white-space: nowrap;
   width: 160px;
-  background-color: #eef7ee;
+  background-color: #F8EFF5;
 }
 
 /* Archive cards */
@@ -459,6 +459,14 @@
   transition: background-color 0.15s, color 0.15s;
 }
 
+.cta-register-sub {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  margin-top: 6px;
+}
+
 .cta-register:hover {
   background-color: var(--gov-green-dark);
   color: var(--gov-yellow);
@@ -513,7 +521,7 @@
 .consent-checkbox {
   margin-top: 30px;
   padding: 15px;
-  background-color: #eef7ee;
+  background-color: #F8EFF5;
   border: 1px solid var(--gov-green-primary);
   font-size: 14px;
   line-height: 1.6;

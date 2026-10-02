@@ -2,21 +2,23 @@
 
 :root {
   /* Primary */
-  --gov-yellow: #FFDB5D;
-  --gov-blue: #DFFFF4;
+  --gov-yellow: #FFC759;   /* Sunflower Gold */
+  --gov-blue: #FBECF7;     /* Pale Blush (page tint, derived from Blush Pop) */
+  --gov-blush: #FAB2EA;    /* Blush Pop — soft text on dark grounds */
+  --gov-lobster: #F15156;  /* Lobster Pink — advisories & badges only */
 
-  /* Greens */
-  --gov-green-dark: #0f470b;
-  --gov-green-deep: #174d12;
-  --gov-green-forest: #24551b;
-  --gov-green-primary: #226b07;
-  --gov-green-mid: #2b710f;
-  --gov-green-bright: #348a0e;
-  --gov-green-vivid: #367011;
-  --gov-green-olive: #4e7313;
-  --gov-green-sage: #5d7514;
-  --gov-green-light: #5d9230;
-  --gov-green-muted: #72852c;
+  /* "Greens" — plum/indigo ramp (names kept for compatibility) */
+  --gov-green-dark: #523249;    /* Blackberry Cream */
+  --gov-green-deep: #472A40;
+  --gov-green-forest: #5E3A54;
+  --gov-green-primary: #5D2E8C; /* Indigo Velvet */
+  --gov-green-mid: #653299;
+  --gov-green-bright: #7C4DB3;
+  --gov-green-vivid: #6B3FA0;
+  --gov-green-olive: #8A5BBE;
+  --gov-green-sage: #9A6FC9;
+  --gov-green-light: #A87FD4;
+  --gov-green-muted: #8A6C84;
 
 }
 

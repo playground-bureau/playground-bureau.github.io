@@ -20,7 +20,7 @@ h1 {
   font-family: 'Georgia', 'Times New Roman', serif;
   font-weight: bold;
   margin: 0;
-  color: var(--gov-green-dark);
+  color: var(--gov-green-primary);
 }
 
 hr {
@@ -80,13 +80,13 @@ a.gov-header-left,
 .gov-header-subtitle {
   font-family: 'Georgia', serif;
   font-size: 11px;
-  color: #c4e8c0;
+  color: var(--gov-blush);
   margin-top: 2px;
 }
 
 .gov-header-lang {
   font-size: 12px;
-  color: #c4e8c0;
+  color: var(--gov-blush);
 }
 
 .gov-header-lang a {
@@ -138,7 +138,7 @@ a.gov-header-left,
 .footer-wrapper {
   background-color: var(--gov-green-dark);
   padding: 15px 30px;
-  color: #c4e8c0;
+  color: var(--gov-blush);
   font-size: 12px;
 }
 
@@ -160,7 +160,7 @@ a.gov-header-left,
 
 .welcome-section h1 {
   font-size: 24px;
-  color: var(--gov-green-dark);
+  color: var(--gov-green-primary);
   margin-bottom: 5px;
 }
 
@@ -175,7 +175,7 @@ a.gov-header-left,
   font-size: 18px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--gov-green-forest);
+  color: var(--gov-green-dark);
 }
 
 /* ==================
@@ -280,7 +280,7 @@ a.gov-header-left,
 
 .nav-link:hover {
   background-color: var(--gov-blue);
-  border-left: 3px solid var(--gov-green-bright);
+  border-left: 3px solid var(--gov-lobster);
   color: var(--gov-green-dark);
 }
 
@@ -303,7 +303,7 @@ a.gov-header-left,
   display: flex;
   align-items: center;
   font-size: 11px;
-  color: #c4e8c0;
+  color: var(--gov-blush);
   margin-bottom: 8px;
 }
 
@@ -321,9 +321,9 @@ a.gov-header-left,
     Government Alert Marquee
     ================== */
 .gov-alert {
-  background-color: #8b0000;
-  border-top: 2px solid #ff4444;
-  border-bottom: 2px solid #ff4444;
+  background-color: var(--gov-lobster);
+  border-top: 2px solid var(--gov-green-dark);
+  border-bottom: 2px solid var(--gov-green-dark);
   margin: 25px 0 0;
   padding: 10px 0;
   overflow: hidden;
@@ -353,7 +353,7 @@ a.gov-header-left,
 /* NEW badge */
 .new-badge {
   display: inline-block;
-  background-color: var(--gov-green-bright);
+  background-color: var(--gov-lobster);
   color: var(--gov-yellow);
   font-size: 9px;
   font-weight: bold;
@@ -391,7 +391,7 @@ a.gov-header-left,
 }
 
 .footer-text {
-  color: #c4e8c0;
+  color: var(--gov-blush);
   text-align: left;
   font-size: 12px;
   margin: 3px 0;
